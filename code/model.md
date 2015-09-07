@@ -29,3 +29,19 @@ $api-> GetUserWork(9999);
 $api-> GetUserWork(9999, 15357,1, true);
 
 ```
+
+##### 构建`Song`对象
+```php
+
+```
+
+##### 构建`Duet`合唱对象
+```php
+
+```
+
+##### 构建`Gift`礼物相关对象
+```php
+
+```
+
