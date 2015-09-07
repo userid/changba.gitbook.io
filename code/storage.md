@@ -1,6 +1,7 @@
 主要数据的存储结构
 ===
 - MySQL主从结构
+- 几个主要的mysql主库和从库的分布
 - zuitaoktv数据库下表的结构介绍
 - Redis相关
  * user redis
