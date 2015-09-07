@@ -8,7 +8,7 @@
  - [主要接口和代码分布](code/structure.md)
  - [安全相关](code/security.md)
 
-* y运维指南
+* 运维指南
  - [监控和短信报警](dev/monitor.md)
  - [值班相关和职责要求](dev/duty.md)
  - [问题分类](dev/qa.md)
