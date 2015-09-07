@@ -95,6 +95,8 @@ $rService->getRecentListeners($workid);
 $api->GetWorkComment2($workid,$start=0,$num=20,$asc='DESC',$needReplyCount=true, $workOwner='');
 #最常见的用法
 $api->GetWorkComment2($workid,$start,$num); //获取$start, $num个评论
+#获取用户作品评论的回复
+$api->GetWorkCommentReply2($commentid);
 ```
 
 ###会员相关
