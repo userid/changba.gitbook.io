@@ -71,6 +71,9 @@ $api->checkChangbaIDRegistered($accountid);
  
 `TODO`
 
+- 直播间相关的用户信息的读取和保存
+
+`TODO`
 
 ### 文件上传
 
