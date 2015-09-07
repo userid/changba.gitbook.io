@@ -102,7 +102,22 @@ $api->GetWorkCommentReply2($commentid);
 
 ###会员相关
 
-
+- 判断用户是否是会员:
+```php
+# 1. 首先判断用户自己传上来的标志位：(不严谨 做初判)
+$ismember = intval($_REQUEST["ismember"]);
+// $ismember>0 表示客户端自认为是会员
+# 2. 服务器判断:
+UserService::isMember($userid);
+```
+- 得到会员等级
+```
+UserService::getUserMembershipLevel($userid);
+```
+- 得到会员信息
+```
+UserService::getMemberInfo($userid);
+```
 ###群组相关
 
 `TODO`
