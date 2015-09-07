@@ -46,7 +46,7 @@ $api->SolrSearchSongsByKeyword($keyword, $start, $num, $songType, $first=FALSE);
 
 ##### 构建`Duet`合唱对象
 ```php
-/*这个代码和参数都非常复杂，因此需要重构这个实现 */
+/*这个代码和参数都非常复杂，由于遗留问题还涉及到异地机房，因此需要重构这个实现*/
 DuetService::getInstance()->getDuet($duetid,$useredis=true,$includeduetcount = true,$exclude_deleted=true,$includesonginfo=true);
 #正常使用的时候只用一个参数吧
 DuetService::getInstance()->getDuet($duetid);
