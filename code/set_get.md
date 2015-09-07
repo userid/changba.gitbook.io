@@ -50,6 +50,29 @@ UserPersonalNum Object
 
 */
 ```
+- 用户手机号相关:
+```php
+#根据手机号获得用户名, 这个接口稍重，少用
+UserService::getUserIdByPhone($phone);
+#根据用户id，查找用户手机号
+UserService::getPhoneByUserId($userid);
+```
+
+- 重置密码
+```php
+UserService::updatePassword($curuserid,$md5pwd);
+```
+- 判断唱吧号或者邮箱有没有被注册
+```php
+$api = ZuiTaoKTV::GetInstance();
+$api->checkChangbaIDRegistered($accountid);
+```
+- 敏感词检测
+ 
+`TODO`
+
+
+### 文件上传
 
 
 ###作品相关的数据
