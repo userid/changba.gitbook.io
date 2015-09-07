@@ -49,3 +49,6 @@ include __DIR__ . '/common/common.inc.php';
 `in_array()`,`usort()`等, 注意参数的顺序;
 - `php`代码中禁止使用引用;
 - `php` 谨慎区分`==`和`===`的含义， 注意`null`，`0`,`"0"`,`false`的含义;
+- 和客户端约定返回变量时，尽量用`"0"`和`"1"`取代`false`和`true`;
+
+
