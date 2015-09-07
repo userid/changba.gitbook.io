@@ -16,4 +16,6 @@
  * www站， $mem_site = new useSiteCache();
  * memcache queue的使用
  
+
+
 - 增加redis字段，修改mysql表结构和索引时需要申请
