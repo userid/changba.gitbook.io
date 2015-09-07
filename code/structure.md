@@ -45,4 +45,7 @@ include __DIR__ . '/common/common.inc.php';
 的查询，和like "%XXX%"一样的慢查询。
 - `redis`有大量多行执行时，使用`multi()`和`exec()`组合的模式;
 - `redis`对象在使用前一定要调用`init()`, 使用`multi()`后一定不能忘了`exec()`;
-
+- `php`自带的函数一定要准确使用，不要理解错含义， 比如`empty()`,`array_merge()`,
+`in_array()`,`usort()`等, 注意参数的顺序;
+- `php`代码中禁止使用引用;
+- `php` 谨慎区分`==`和`===`的含义， 注意`null`，`0`,`"0"`,`false`的含义;
