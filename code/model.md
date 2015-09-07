@@ -32,6 +32,10 @@ $api-> GetUserWork(9999, 15357,1, true);
 
 ##### 构建`Song`对象
 ```php
+$api = ZuiTaoKTV::GetInstance();
+$api->GetSong($songid);
+//如果不需要缓存
+$api->GetSong($songid, true);
 
 ```
 
