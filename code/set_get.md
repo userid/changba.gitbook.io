@@ -76,6 +76,23 @@ $api->checkChangbaIDRegistered($accountid);
 
 
 ###作品相关的数据
+- 听过次数
+```
+$api->RecordWorkListenedTimeToRedis($workid, $listenedtime, $listennum=1);
+# 在changba.com上听歌增加听过次数的方法
+$api-> RecordWorkListenedTimeOnWebSite($workid, $ip);
+#得到听过次数
+$api->GetUserWorkListenNum($workid);
+```
+- 最近听众
+```php
+$rService = new RecentListenerService();
+$rService->getRecentListeners($workid);
+```
+- 评论
+```php
+
+```
 
 
 ###会员相关
