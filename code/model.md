@@ -34,13 +34,22 @@ $api-> GetUserWork(9999, 15357,1, true);
 ```php
 $api = ZuiTaoKTV::GetInstance();
 $api->GetSong($songid);
-//如果不需要缓存
+#如果不需要缓存
 $api->GetSong($songid, true);
 
+//提供根据歌曲的关键词，名字，tag，作者的搜索
+/*
+$songType表示搜索我们自己的库还是第三方的，具体看代码实现
+*/
+$api->SolrSearchSongsByKeyword($keyword, $start, $num, $songType, $first=FALSE);
 ```
 
 ##### 构建`Duet`合唱对象
 ```php
+/*这个代码和参数都非常复杂，因此需要重构这个实现 */
+DuetService::getInstance()->getDuet($duetid,$useredis=true,$includeduetcount = true,$exclude_deleted=true,$includesonginfo=true);
+#正常使用的时候只用一个参数吧
+DuetService::getInstance()->getDuet($duetid);
 
 ```
 
